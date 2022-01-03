@@ -6,10 +6,7 @@ import {
   ContactWhatsapp,
   GoFood,
   GrabFood,
-  InstagramIcn,
-  Shopee,
   ShopeeFood,
-  WhatsappIcn,
 } from "../assets";
 
 const ContactComp = () => {

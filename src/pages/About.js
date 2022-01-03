@@ -1,6 +1,5 @@
 import React from "react";
-import { Location, Banner } from "../assets";
-import FooterContent from "../components/FooterContent";
+import { Banner } from "../assets";
 import Calendar from "../components/svg/calendar";
 import Pin from "../components/svg/pin";
 
@@ -32,20 +31,6 @@ const About = () => {
             Cari Kami Disini
           </p>
         </div>
-
-        {/* <div className="mt-3">
-          <iframe
-            className="rounded-xl"
-            width="327"
-            height="120"
-            id="gmap_canvas"
-            src="https://maps.google.com/maps?q=mabes%20kopi%20gumuruh&t=&z=15&ie=UTF8&iwloc=&output=embed"
-            frameBorder="0"
-            scrolling="no"
-            marginHeight="0"
-            marginWidth="0"
-          ></iframe>
-        </div> */}
 
         <div className="mt-4 flex flex-col space-y-3 mb-32">
           <div className="flex justify-start gap-3 bg-primary-10 py-1 px-4 w-full rounded-xl">
