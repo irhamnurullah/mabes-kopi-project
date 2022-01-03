@@ -24,9 +24,15 @@ import Shopee from "./img/shopee.png";
 import Bukalapak from "./img/bukalapak.png";
 import Unsplash from "./img/unsplash.png";
 import Location from "./img/location.png";
-import Banner from "./img/banner.png";
+import Banner from "./img/Banner.jpg";
 import Bottle from "./img/bottle.png";
 import Bottle1 from "./img/bottle1.svg";
+import Hero1 from "./img/hero-1.png";
+import Hero2 from "./img/hero-2.png";
+import Hero2Mobile from "./img/hero2mobile.png";
+import PerfectRoasting from "./img/perfectroasting.png";
+import HandleWithLove from "./img/handlewithlove.png";
+import FreshBean from "./img/freshbean.png";
 
 // Products
 
@@ -57,4 +63,10 @@ export {
   Banner,
   Bottle,
   Bottle1,
+  Hero1,
+  Hero2,
+  PerfectRoasting,
+  HandleWithLove,
+  FreshBean,
+  Hero2Mobile,
 };

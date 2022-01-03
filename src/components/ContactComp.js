@@ -6,59 +6,75 @@ import {
   ContactWhatsapp,
   GoFood,
   GrabFood,
+  InstagramIcn,
   Shopee,
   ShopeeFood,
+  WhatsappIcn,
 } from "../assets";
 
 const ContactComp = () => {
   return (
-    <div>
-      {/* Contact */}
-      <div className="mt-44">
-        <p className="text-neutral-90 font-bold text-2xl">
-          Hubungi Kami Disini
-        </p>
-        <div className="flex mt-6 space-x-8">
-          <button
-            className="py-3 px-6 text-white rounded-contact flex space-x-4"
-            style={{ background: "#378D44" }}
-          >
-            <img src={ContactWhatsapp} alt="whatsapp" />
-            <span>0895453646224</span>
-          </button>
-          <button
-            className="py-3 px-6 text-white rounded-contact flex space-x-4"
-            style={{ background: "#CE2E2E" }}
-          >
-            <img src={ContactMail} alt="email" />
-            <span>Mabeskopi42a@gmail.com</span>
-          </button>
-          <button className="py-3 px-6 text-white rounded-contact flex space-x-4 bg-gradient-to-tl from-purple-800 to-pink-700">
-            <img src={ContactInstagram} alt="instagram" />
-            <span>_mabeskopi</span>
-          </button>
-        </div>
-      </div>
-
+    <>
       {/* Delivery Order */}
-      <div className="mt-12">
-        <p className="text-neutral-90 font-bold text-2xl">Delivery</p>
-        <div className="flex mt-6 space-x-32">
-          <img src={GoFood} alt="gofood" />
-          <img src={GrabFood} alt="grabfood" />
-          <img src={ShopeeFood} alt="shopeefood" />
+      <div className="z-10 lg:min-h-screen container mx-auto mt-7">
+        <div className="">
+          <p className="text-base font-semibold text-neutral-90">
+            Buy Take Away
+          </p>
+          <p className="text-xs text-neutral-50 leading-5">
+            Hanya tersedia untuk area Bandung kota
+          </p>
+
+          <div className="mt-4 flex items-center justify-start space-x-6">
+            <img src={GoFood} alt="GoFood" className="h-6" />
+            <img src={GrabFood} alt="GrabFood" className="h-6" />
+            <img src={ShopeeFood} alt="ShopeeFood" className="h-6 " />
+          </div>
         </div>
       </div>
 
-      {/* Market Place */}
-      <div className="mt-12">
-        <p className="text-neutral-90 font-bold text-2xl">Market Place</p>
-        <div className="flex mt-6 space-x-32">
-          <img src={Shopee} alt="shopee" />
-          <img src={Bukalapak} alt="bukalapak" />
+      {/* Marketplace */}
+      <div className="z-10 lg:min-h-screen container mx-auto mt-9">
+        <div className="">
+          <p className="text-base font-semibold text-neutral-90">Marketplace</p>
+          <p className="text-xs text-neutral-50 leading-5">
+            Untuk Pembelian biji kopi
+          </p>
+
+          <div className="mt-4 flex items-center justify-start space-x-6">
+            <img src={Bukalapak} alt="Bukalapak" className="h-6" />
+            <img src={ShopeeFood} alt="ShopeeFood" className="h-6 " />
+          </div>
         </div>
       </div>
-    </div>
+
+      {/* Information Contact */}
+      <div className="z-10 lg:min-h-screen container mx-auto mt-9 mb-32">
+        <div className="">
+          <p className="text-base font-semibold text-neutral-90">
+            Information & Contact
+          </p>
+          <p className="text-xs text-neutral-50 leading-5">
+            Hubungi kami disini
+          </p>
+
+          <div className="mt-4 flex flex-wrap items-center justify-start gap-3">
+            <div className="font-medium text-xs leading-5 py-1 px-2 rounded-xl border border-indigo-500 flex items-center space-x-2 text-indigo-500">
+              <img src={ContactInstagram} alt="instagram" />
+              <p>@_mabeskopi</p>
+            </div>
+            <div className="font-medium text-xs leading-5 py-1 px-2 rounded-xl border border-secondary-70 flex items-center space-x-2 text-secondary-70">
+              <img src={ContactWhatsapp} alt="whaysapp" />
+              <p>0895453646224</p>
+            </div>
+            <div className="font-medium  text-xs leading-5 py-1 px-2 rounded-xl border border-red-600 flex items-center space-x-2 text-red-600">
+              <img src={ContactMail} alt="whaysapp" />
+              <p>mabeskopi42A@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 

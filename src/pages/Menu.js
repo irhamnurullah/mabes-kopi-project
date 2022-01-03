@@ -25,45 +25,56 @@ function Menu() {
 
   return (
     <>
-      <ScrollToTopOnMount />
-      <div className="container mx-auto pl-16">
-        <div className="text-center mt-10">
-          <div className="text-3xl font-semibold">
-            <p>Pilih Menu Yang Kamu Mau</p>
-          </div>
-          <div className="text-neutral-60 font-normal mt-5 flex flex-col">
-            <p>
-              Jangan bimbang jangan ragu
-              <br />
-              <span> apapun itu, semoga menemani harimu</span>
+      <div className="z-10 lg:min-h-screen container mx-auto">
+        <ScrollToTopOnMount />
+        <div className="mt-9 lg:pl-16 sm:mx-auto lg:px-4">
+          {/* Head */}
+          <div className="w-64 mx-auto lg:w-96">
+            <p className="text-center text-lg leading-6 font-semibold text-neutral-90 lg:text-2xl">
+              Pilih Menu Yang Kamu Mau
+            </p>
+            <p className="text-center text-xs leading-5 font-normal text-neutral-60 lg:text-base lg:mt-3 lg:leading-8">
+              Jangan bimbang jangan ragu apapun itu, semoga menemani harimu
             </p>
           </div>
-        </div>
-        <div className="flex justify-between mt-16">
-          <div className="text-secondary-70 space-x-3">
-            {ListMenu.map((item) => {
-              return (
-                <button
-                  key={item}
-                  className="border border-secondary-70 font-medium text-lg  py-2 px-6 rounded-full hover:text-white hover:bg-secondary-90"
-                >
-                  {item}
-                </button>
-              );
-            })}
+
+          {/* Content */}
+          <div className="flex justify-between mt-7 lg:mt-4">
+            <div className="font-semibold text-neutral-90 lg:text-lg">
+              Category
+            </div>
+            <div className="font-medium text-sm text-blue-600">
+              How To Order
+            </div>
           </div>
-          <button
-            onClick={() => history.push("/contact")}
-            className="text-blue-400 font-medium text-lg"
-          >
-            How to Order ?
-          </button>
+
+          {/* Button */}
+          <div className="mt-4">
+            <div className="flex justify-between space-x-2 overflow-x-scroll overflow-visible scrollbar-hide lg:justify-start">
+              {ListMenu.map((item) => {
+                return (
+                  <div key={item}>
+                    <button
+                      className="w-28 lg:w-36 py-2 bg-white text-xs font-medium leading-5 text-secondary-70 border border-secondary-70 rounded-3xl hover:bg-secondary-70 hover:text-white hover:border-transparent
+                  "
+                    >
+                      {item}
+                    </button>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Product Cards */}
+          <div className="mt-2 mb-32">
+            <ProductCards />
+            <ProductCards />
+            <ProductCards />
+            <ProductCards />
+          </div>
         </div>
-        <ProductCards />
-        <ProductCards />
-        <ProductCards />
       </div>
-      <FooterContent />
     </>
   );
 }
