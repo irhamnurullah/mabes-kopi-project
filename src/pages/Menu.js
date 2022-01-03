@@ -1,6 +1,4 @@
 import React, { useEffect } from "react";
-import { useHistory } from "react-router-dom";
-import FooterContent from "../components/FooterContent";
 import ProductCards from "../components/ProductCards";
 
 function ScrollToTopOnMount() {
@@ -12,8 +10,6 @@ function ScrollToTopOnMount() {
 }
 
 function Menu() {
-  const history = useHistory();
-
   const ListMenu = [
     "Recomended",
     "Coffee",

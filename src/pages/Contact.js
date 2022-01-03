@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import ContactComp from "../components/ContactComp";
 import { DineIn, TakeAway } from "../assets";
-import FooterContent from "../components/FooterContent";
 
 function ScrollToTopOnMount() {
   useEffect(() => {
